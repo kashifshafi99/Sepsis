@@ -1,0 +1,19 @@
+{
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": "frontend",
+  "rewrites": [
+    {
+      "source": "/predict",
+      "destination": "https://kashif0099-sepsis.hf.space/predict"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    }
+  ]
+}

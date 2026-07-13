@@ -1,0 +1,16 @@
+# Ignore large datasets and model files
+Dataset.csv
+*.psv
+training_setA/
+training_setB/
+model.pkl
+*.zip
+
+# Ignore temp folders
+temp_repo/
+ui_design/
+hf_backend/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
