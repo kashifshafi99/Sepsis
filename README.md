@@ -1,23 +1,67 @@
-# Sepsis Prediction Model
+<div align="center">
+  <img src="frontend/logo.png" alt="Sepsis Logo" width="150" />
+  <h1>Sepsis Risk Prediction System</h1>
+  <p><strong>A full-stack machine learning application for early detection of Sepsis risk in ICU patients.</strong></p>
 
-## Problem Statement & Method
-Sepsis is a life-threatening condition that arises when the body's response to an infection causes injury to its tissues and organs. Early detection and intervention are crucial for improving patient outcomes and reducing mortality rates associated with sepsis. However, accurately identifying patients at risk of developing sepsis remains challenging due to the complexity of its clinical presentation and the rapid progression of the condition.
+  [![Live Deployment](https://img.shields.io/badge/Live_Deployment-Vercel-black?style=for-the-badge&logo=vercel)](https://sepsis-phi.vercel.app/)
+  [![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+  [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+  [![Scikit-Learn](https://img.shields.io/badge/ML_Model-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn)](https://scikit-learn.org/)
+</div>
 
-To address this issue, we propose developing a predictive model capable of accurately identifying patients at risk of developing sepsis. Our methodology involves two main steps: feature importance analysis and predictive modeling. 
+<br />
 
-1. **Feature Importance Analysis**: We will utilize machine learning models such as **Random Forest** or **Principal Component Analysis (PCA)** to ascertain the most influential clinical variables contributing to sepsis prediction. This analysis will provide critical insights into which factors are most indicative of sepsis development, aiding in understanding the underlying physiological mechanisms.
+## 🌐 Live Demo
+The application is fully deployed and accessible online!
+**[View Live Application here](https://sepsis-phi.vercel.app/)**
 
-2. **Predictive Modeling**: Following feature analysis, we will develop a predictive model using **Logistic Regression** to forecast whether a patient will develop sepsis. Logistic regression is known for its interpretability and efficiency in binary classification tasks, making it suitable for practical implementation in clinical settings.
+---
 
-Our primary objective is to develop a precise predictive model that offers invaluable insights into the onset of sepsis, facilitating proactive interventions and optimal patient care and management.
+## 📖 Overview
+Sepsis is a life-threatening medical emergency caused by the body's extreme response to an infection. Early detection and treatment are critical for patient survival. This project utilizes clinical data (vital signs and laboratory values) to accurately predict a patient's risk of developing sepsis.
 
-## Data
-For our project, we will utilize the **Kaggle dataset** sourced from **PhysioNet**, specifically the **Prediction of Sepsis** dataset. This repository comprises a diverse array of clinical data, encompassing vital signs, laboratory results, and demographic information essential for our predictive modeling endeavor. 
+The system is designed with a modern, glassmorphic UI and a robust Python backend to deliver instant, reliable predictions with confidence scores.
 
-- **Dataset Details**:
-  - **Number of Columns**: Approximately 44
-  - **Number of Rows**: 1,552,210
-  - **Source**: [Kaggle Sepsis Prediction Dataset](https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis)
+## ✨ Features
+- **Real-Time Predictions:** Instant risk analysis powered by a machine learning model.
+- **Confidence Scoring:** Outputs the probability of sepsis to assist clinical decision-making.
+- **Serverless Architecture:** The FastAPI backend is deployed on Vercel Serverless Functions for infinite scalability.
+- **Professional UI/UX:** Responsive, modern design tailored for medical and professional environments.
 
-This openly accessible dataset provides a robust foundation for our analysis and modeling efforts.
+## 🛠️ Technology Stack
+- **Frontend:** React, HTML5, Vanilla CSS
+- **Backend:** Python, FastAPI, Pydantic (Vercel Serverless)
+- **Machine Learning:** Scikit-Learn (Logistic Regression), Pandas, Numpy
+- **Deployment:** Vercel
 
+## 🚀 Local Development
+
+### Prerequisites
+- Node.js (for frontend)
+- Python 3.9+ (for backend)
+
+### Setup Instructions
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/kashifshafi99/Sepsis.git
+   cd Sepsis
+   ```
+
+2. **Run the Backend (FastAPI):**
+   ```bash
+   cd api
+   pip install -r requirements.txt
+   uvicorn index:app --reload --port 8000
+   ```
+
+3. **Run the Frontend (React):**
+   Simply serve the `frontend` directory using any local server, or open `index.html`.
+
+## 👨‍💻 About the Developer
+Developed by **Kashif Shafi**, an expert Software Engineer specializing in full-stack web development and machine learning integration.
+
+- **GitHub:** [@kashifshafi99](https://github.com/kashifshafi99)
+- **Live Project:** [Sepsis Risk Prediction](https://sepsis-phi.vercel.app/)
+
+## 📄 License
+This project is licensed under the MIT License.

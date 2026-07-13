@@ -229,6 +229,16 @@ function About() {
           </div>
         ))}
       </div>
+
+      <h3 className="section-title">Project Links</h3>
+      <div className="links-container animated-card">
+        <a href="https://github.com/kashifshafi99/Sepsis" target="_blank" rel="noreferrer" className="project-link">
+          ⭐ View Source on GitHub
+        </a>
+        <a href="https://sepsis-phi.vercel.app/" target="_blank" rel="noreferrer" className="project-link">
+          🚀 Live Application
+        </a>
+      </div>
     </div>
   );
 }
