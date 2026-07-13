@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/predict",
-      "destination": "https://kashif0099-sepsis.hf.space/predict"
+      "destination": "/api/predict"
     }
   ],
   "headers": [

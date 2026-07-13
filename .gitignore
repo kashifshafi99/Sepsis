@@ -1,9 +1,8 @@
-# Ignore large datasets and model files
+# Ignore large datasets
 Dataset.csv
 *.psv
 training_setA/
 training_setB/
-model.pkl
 *.zip
 
 # Ignore temp folders
